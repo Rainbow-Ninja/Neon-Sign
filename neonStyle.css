@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+html{
+    background: black;
+
+}
+
+body{
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 13% 35%;
+}
+
+.this, .lit{
+    font-family: 'Neon';
+    font-size: 6em;
+    text-shadow: 0 0 3vw;
+}
+
+.this{
+    color: white;
+    animation: this 4s ease infinite;
+}
+
+.lit{
+    color: red;
+    animation: lit 1s linear infinite;
+}
+
+@keyframes this{
+    0% { text-shadow: 0 0 3vw white }
+    25% { 
+        text-shadow: 0 0 2vw rgba(255, 255, 255, 0.831);
+        color: rgba(216, 213, 213, 0.5); 
+    }
+    50% { 
+        text-shadow: 0 0 4vw rgba(255, 255, 255, 0.932);
+        color: rgba(255, 255, 255, 0.801); 
+    }
+    75% { 
+        text-shadow: 0 0 2.5vw rgba(255, 255, 255, 0.651);
+        color: rgba(216, 213, 213, 0.5);
+    }
+    100% {
+        text-shadow: 0 0 3vw rgb(216, 213, 213);
+        color: rgba(216, 213, 213, 0.5);
+    }
+}
+
+@keyframes lit{
+    from {
+        text-shadow: 0 0 4vw red;
+    }
+    to {
+        text-shadow: 0 0 2vw rgb(255, 0, 0);
+        color: rgba(247, 0, 0, 0.24);
+    }
+}
